@@ -8,11 +8,11 @@ function Header() {
   const [qtde, setQtde] = useState(0);
 
   const onLogoClick = () => {
-    navigate(`/`);
+    navigate(`/editora-vanilla-cream`);
   };
 
   const onCartClick = () => {
-    navigate(`/cart`);
+    navigate(`/editora-vanilla-cream/cart`);
   };
 
   useEffect(() => {

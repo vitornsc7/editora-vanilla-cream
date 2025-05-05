@@ -6,7 +6,7 @@ const Products = ({ titulo, id }) => {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
-    fetch("/banco.txt")
+    fetch("/editora-vanilla-cream/banco.txt")
       .then((res) => res.text())
       .then((texto) => {
         const json = JSON.parse(texto);

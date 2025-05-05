@@ -14,7 +14,7 @@ const CartPage = () => {
       contagem[id] = (contagem[id] || 0) + 1;
     });
 
-    fetch("/banco.txt")
+    fetch("/editora-vanilla-cream/banco.txt")
       .then((res) => res.text())
       .then((texto) => {
         const todosProdutos = JSON.parse(texto);

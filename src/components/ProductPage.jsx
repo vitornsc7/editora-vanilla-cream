@@ -12,7 +12,7 @@ const ProductPage = () => {
   const [produto, setProduto] = useState(null);
 
   useEffect(() => {
-    fetch("/banco.txt")
+    fetch("/editora-vanilla-cream/banco.txt")
       .then((res) => res.text())
       .then((texto) => {
         const json = JSON.parse(texto);

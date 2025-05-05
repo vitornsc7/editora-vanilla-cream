@@ -7,7 +7,7 @@ const Card = ({ dados }) => {
   const onSeeProductClick = () => {
     const query = new URLSearchParams();
     query.set("id", dados.id);
-    navigate(`/product?${query.toString()}`);
+    navigate(`/editora-vanilla-cream/product?${query.toString()}`);
   };
 
   return (

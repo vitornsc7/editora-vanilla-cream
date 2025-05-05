@@ -8,15 +8,15 @@ import CartPage from "./components/CartPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/editora-vanilla-cream",
     element: <App />,
   },
   {
-    path: "/product",
+    path: "/editora-vanilla-cream/product",
     element: <ProductPage />,
   },
   {
-    path: "/cart",
+    path: "/editora-vanilla-cream/cart",
     element: <CartPage />,
   },
 ]);
