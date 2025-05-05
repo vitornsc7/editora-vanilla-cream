@@ -32,7 +32,6 @@ function Header() {
 
   return (
     <>
-      {/* Rodapé */}
       <div className="h-10 bg-green-950 text-white">
         <div className="max-w-7xl mx-auto h-full flex justify-between items-center px-4">
           <p className="text-sm">Desenvolvido por Vitor do Nascimento</p>
