@@ -9,7 +9,6 @@ const Button = (id) => {
       sessionStorage.setItem("cart", JSON.stringify(existingCart));
 
       window.dispatchEvent(new Event("cartUpdated"));
-      window.location.reload();
     }
   };
 

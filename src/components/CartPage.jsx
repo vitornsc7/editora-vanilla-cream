@@ -5,7 +5,7 @@ import Products from "./Products";
 const CartPage = () => {
   const [produtosDetalhados, setProdutosDetalhados] = useState([]);
 
-  useEffect(() => {
+  const atualizarCarrinho = () => {
     const carrinhoBruto = JSON.parse(sessionStorage.getItem("cart")) || [];
     const idsCarrinho = carrinhoBruto.map((item) => item.dados);
 
@@ -28,6 +28,12 @@ const CartPage = () => {
         setProdutosDetalhados(produtos);
       })
       .catch((err) => console.error("Erro ao carregar banco.txt:", err));
+  };
+
+  useEffect(() => {
+    atualizarCarrinho();
+    window.addEventListener("cartUpdated", atualizarCarrinho);
+    return () => window.removeEventListener("cartUpdated", atualizarCarrinho);
   }, []);
 
   const removerDoCarrinho = (id) => {
@@ -36,7 +42,7 @@ const CartPage = () => {
     if (index !== -1) carrinhoAtual.splice(index, 1);
 
     sessionStorage.setItem("cart", JSON.stringify(carrinhoAtual));
-    window.location.reload();
+    window.dispatchEvent(new Event("cartUpdated"));
   };
 
   const calcularTotal = () => {

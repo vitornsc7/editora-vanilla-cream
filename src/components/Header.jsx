@@ -8,7 +8,7 @@ function Header() {
   const [qtde, setQtde] = useState(0);
 
   const onLogoClick = () => {
-    navigate(`/editora-vanilla-cream`);
+    navigate(`/editora-vanilla-cream/`);
   };
 
   const onCartClick = () => {
