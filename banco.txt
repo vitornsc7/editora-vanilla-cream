@@ -4,41 +4,41 @@
     "titulo": "A última vez em que verdadeiramente tentei",
     "preco": 39.99,
     "descricao": "Publicado em 2015, Humberto Jarros Pires traça um retrato cru e poético de Jaime — um homem marcado por incontáveis tentativas no amor. Com uma narrativa envolta em melancolia e ternura, o autor resgata memórias fragmentadas de relações breves, mas intensas, que deixaram marcas duradouras. Entre nostalgia, ironia e silêncios doloridos, Pires nos conduz pelos sentimentos de um coração exausto de esperar, mas ainda aberto ao risco de sentir. Uma obra sobre desistências, esperanças que persistem e a coragem silenciosa de tentar — uma última vez.",
-    "imagem": "../src/assets/tentei-book.png"
+    "imagem": "/editora-vanilla-cream/src/assets/tentei-book.png"
   },
   {
     "id": 2,
     "titulo": "Boa tarde, como está a primavera?",
     "preco": 39.99,
     "descricao": "Emílio Fernandes Rosa nos convida a uma jornada nostálgica e melancólica de volta à cidade natal, agora abandonada e esquecida pelo tempo. Com uma escrita delicada e introspectiva, o autor revisita ruas desertas, casas vazias e memórias que ainda vivem em cada parede suja de musgo. Ao explorar a decadência de sua terra natal, chamada Primavera, o protagonista busca compreender o que foi perdido — e o que ainda persiste nas sombras do que um dia foi. Acompanhado de fotografias e ilustrações feitas pelo próprio autor, a cidade ganha vida, revelando uma perspectiva única e tocante. Uma reflexão sobre o abandono, a passagem do tempo e a complexa relação entre memória e lugar, que nos lembra que, às vezes, voltar para casa é também um ato de despedida.",
-    "imagem": "../src/assets/primavera-book.png"
+    "imagem": "/editora-vanilla-cream/src/assets/primavera-book.png"
   },
   {
     "id": 3,
     "titulo": "Buscando sentido",
     "preco": 19.99,
     "descricao": "Você encontrou um easter egg! Isso mesmo — sou eu na capa do livro. Que tal dar uma olhada nos meus outros projetos no GitHub? Vai que algum te surpreende também!",
-    "imagem": "../src/assets/sentido-book.png"
+    "imagem": "/editora-vanilla-cream/src/assets/sentido-book.png"
   },
   {
     "id": 4,
     "titulo": "Gray Rain - Minha história com a depressão",
     "preco": 29.99,
     "descricao": "O autor, conhecido apenas como Relógio de Pulso, opta pelo anonimato para narrar com honestidade brutal sua trajetória ao lado da depressão. Em páginas cinzentas como os dias que descreve, ele compartilha pensamentos, memórias e silêncios que raramente encontram voz. Sem fórmulas ou respostas fáceis, este livro é um desabafo íntimo, escrito por alguém que sobrevive a si mesmo em incontáveis manhãs nubladas. Ao se esconder por trás de um nome simbólico, Relógio de Pulso nos lembra que, muitas vezes, o tempo é tanto inimigo quanto aliado — e que escrever pode ser uma forma de resistir.",
-    "imagem": "../src/assets/gray-book.png"
+    "imagem": "/editora-vanilla-cream/src/assets/gray-book.png"
   },
   {
     "id": 5,
     "titulo": "Synchronized Machine Vertices — O nome não faz sentido",
     "preco": 49.99,
     "descricao": "Esta é uma daquelas obras experimentais que desafia a lógica tradicional da narrativa. Mistura ficção científica, filosofia e um toque de absurdo. O livro mergulha em um universo onde máquinas sonham, vértices conversam entre si e a sincronia é apenas uma ilusão construída pela percepção humana. Ao longo de capítulos fragmentados e intencionalmente desconexos, o autor provoca o leitor a encontrar sentido onde talvez não exista — ou a aceitar que nem tudo precisa ter um. Um livro sobre identidade, linguagem, e a busca por propósito em um mundo que não faz questão de explicar nada. Porque, às vezes, o título realmente não faz sentido. E está tudo bem.",
-    "imagem": "../src/assets/machine-book.png"
+    "imagem": "/editora-vanilla-cream/src/assets/machine-book.png"
   },
   {
     "id": 6,
     "titulo": "O preço da passagem",
     "preco": 39.99,
     "descricao": "Érica Píres constrói uma narrativa delicada e poderosa sobre partidas, escolhas e tudo aquilo que deixamos pelo caminho. A história acompanha uma mulher comum, que enfrenta diariamente o trânsito de dentro de um ônibus e uma rotina sem rumo. Seus pensamentos, quase sempre abafados pela música nos fones de ouvido, são interrompidos quando ouve um senhor perguntar ao motorista: 'Qual o preço da passagem?' A pergunta, simples e cotidiana, desperta nela um estalo — uma inquietação adormecida. Após anos estudando e trabalhando, ela se vê diante de um vazio silencioso: qual tem sido, de fato, o preço da passagem? E o que, afinal, se espera que ela deixe para o mundo antes de, enfim, poder descansar?",
-    "imagem": "../src/assets/passagem-book.png"
+    "imagem": "/editora-vanilla-cream/src/assets/passagem-book.png"
   }
 ]
