@@ -24,12 +24,15 @@ const Card = ({ dados }) => {
           />
         </div>
         <h2 className="text-sm mb-2 hover:underline">{dados.titulo}</h2>
+        
+      </div>
+      
+      <div>
         <p className="text-gray-700 text-md text-right mb-4">
           R$ {dados.preco.toFixed(2)}
         </p>
+        <Button id={dados.id} />
       </div>
-
-      <Button dados={dados.id} />
     </div>
   );
 };

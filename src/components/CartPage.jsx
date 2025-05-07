@@ -7,14 +7,14 @@ const CartPage = () => {
 
   const atualizarCarrinho = () => {
     const carrinhoBruto = JSON.parse(sessionStorage.getItem("cart")) || [];
-    const idsCarrinho = carrinhoBruto.map((item) => item.dados);
+    const idsCarrinho = carrinhoBruto;
 
     const contagem = {};
     idsCarrinho.forEach((id) => {
       contagem[id] = (contagem[id] || 0) + 1;
     });
 
-    fetch("/editora-vanilla-cream/banco.txt")
+    fetch("/editora-vanilla-cream/livros-banco.txt")
       .then((res) => res.text())
       .then((texto) => {
         const todosProdutos = JSON.parse(texto);
@@ -38,7 +38,7 @@ const CartPage = () => {
 
   const removerDoCarrinho = (id) => {
     let carrinhoAtual = JSON.parse(sessionStorage.getItem("cart")) || [];
-    const index = carrinhoAtual.findIndex((item) => item.dados === id);
+    const index = carrinhoAtual.findIndex((item) => item === id);
     if (index !== -1) carrinhoAtual.splice(index, 1);
 
     sessionStorage.setItem("cart", JSON.stringify(carrinhoAtual));
@@ -67,7 +67,7 @@ const CartPage = () => {
     <>
       <Header />
       <div className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold mb-6">Carrinho de Compras</h2>
+        <h2 className="text-2xl font-bold mb-6">Carrinho de Compras</h2>
         <div className="grid gap-6">
           {produtosDetalhados.map((item) => (
             <div
@@ -81,22 +81,22 @@ const CartPage = () => {
                   className="w-12 object-cover rounded"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold">{item.titulo}</h3>
+                  <h3 className="font-semibold">{item.titulo}</h3>
                   <p className="text-sm text-gray-500">
                     Quantidade: {item.quantidade}
                   </p>
                 </div>
               </div>
-              <div className="text-right">
-                <p className="text-xl text-green-700 font-bold">
+              <div className="text-right flex flex-col justify-end">
+                <p className="text-lg text-green-700 font-bold">
                   R$ {(item.preco * item.quantidade).toFixed(2)}
                 </p>
-                <button
+                <a
                   onClick={() => removerDoCarrinho(item.id)}
-                  className="text-gray-600 underline text-sm mt-2 hover:cursor-pointer"
+                  className="text-gray-600 p-0 underline text-sm mt-2 hover:cursor-pointer select-none"
                 >
                   Remover unidade
-                </button>
+                </a>
               </div>
             </div>
           ))}

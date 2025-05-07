@@ -31,7 +31,7 @@ function Header() {
   }, []);
 
   return (
-    <>
+    <div className="fixed top-0 left-0  w-full z-50">
       <div className="h-10 bg-green-950 text-white">
         <div className="max-w-7xl mx-auto h-full flex justify-between items-center px-4">
           <p className="text-sm">Desenvolvido por Vitor do Nascimento</p>
@@ -56,16 +56,16 @@ function Header() {
         </div>
       </div>
 
-      <header className="bg-[url('./assets/banner.png')] bg-cover bg-center h-32 text-white">
+      <header className="bg-[url('./assets/banner.png')] bg-cover bg-center h-20 text-white">
         <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 gap-4">
           <img
             onClick={() => onLogoClick()}
             src={logo}
             alt="Logo"
-            className="w-20 h-auto hover:cursor-pointer"
+            className="w-14 h-auto hover:cursor-pointer"
           />
 
-          <div className="flex items-center border-2 border-white rounded-md bg-transparent px-4 py-2 max-w-md w-full">
+          <div className="hidden md:flex items-center border-2 border-white rounded-md bg-transparent px-4 py-2 max-w-md w-full">
             <input
               type="text"
               placeholder="Buscar produtos"
@@ -80,14 +80,14 @@ function Header() {
 
           <div
             onClick={() => onCartClick()}
-            className="text-white flex items-center space-x-1 hover:cursor-pointer hover:scale-110"
+            className="text-white flex items-center justify-end space-x-1 hover:cursor-pointer w-30"
           >
             <ShoppingCart />
             <p>{qtde}</p>
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 }
 

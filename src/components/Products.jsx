@@ -6,7 +6,7 @@ const Products = ({ titulo, id }) => {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
-    fetch("/editora-vanilla-cream/banco.txt")
+    fetch("/editora-vanilla-cream/livros-banco.txt")
       .then((res) => res.text())
       .then((texto) => {
         const json = JSON.parse(texto);
@@ -19,7 +19,7 @@ const Products = ({ titulo, id }) => {
     <div className="bg-gray-100 py-8">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl font-bold mb-5">{titulo}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 md:gap-4 gap-2">
           {produtos
             .filter((produto) => String(produto.id) !== String(id))
             .map((produto) => (
